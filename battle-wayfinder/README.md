@@ -6,4 +6,13 @@ Wayfinder is an AI-assisted JavaScript controller that precomputes four-way path
 
 On 17 November 2026, a local run of the official Season 2 simulator over 3 seeds, 4 house opponents and both sides gave 14 wins and 10 losses; all 24 replays verified and there were no tick exceptions. There were 86.8 refused order parts per game, so the controller needs improvement. This small local result is not a measure of its live rating or a model benchmark. The official upload smoke test completed 400 ticks with zero failures, timeouts and exceptions; acceptance of an upload is not acceptance of the bounty.
 
+### Rated results on 19 November 2026
+
+| Battle.training leaderboard | Wayfinder sets and rank | House-starter rank |
+| --- | --- | --- |
+| [November Cup standings](https://api.battle.training/api/ladders/promotedby-cup-nov-2026) | 120 rated sets, 182 of 266 | 255 |
+| [Public Armor ladder](https://api.battle.training/api/ladder) | 79 rated sets, 238 of 347 | 323 |
+
+The cup standings marked Wayfinder as qualified after 120 sets. These are dated snapshots from Battle.training. Each leaderboard counts its own sets, so the numbers are reported separately.
+
 Run the behavior checks with `node controller.test.cjs`. To reproduce the simulator test with Node, download the arena's current `arena-sim.mjs` and `local-test.mjs` from its [official SDK](https://api.battle.training/llms.txt) into this folder and run `node local-test.mjs controller.js --seeds 3 --vs brawler,holder,random,hunter --rules s2 --profile`. The SDK may change; the stated result describes the version run on that date.
