@@ -15,4 +15,13 @@ On 17 November 2026, a local run of the official Season 2 simulator over 3 seeds
 
 The cup standings marked Wayfinder as qualified after 120 sets. These are dated snapshots from Battle.training. Each leaderboard counts its own sets, so the numbers are reported separately.
 
+### Ranked results on 21 November 2026
+
+| Battle.training leaderboard | Wayfinder sets, rank and rating | House-starter rank and rating |
+| --- | --- | --- |
+| [Public Armor ladder](https://api.battle.training/api/ladder) | 142 sets, 250 of 375, rating 1055 | 357 of 375, rating 709 |
+| [November Cup standings](https://api.battle.training/api/ladders/promotedby-cup-nov-2026) | 220 sets, 192 of 291, rating 1094 | 281 of 291, rating 873 |
+
+The same `wayfinder-v1` controller passed 100 ranked sets in the public Armor ladder and rated above `house-starter` in that snapshot. The cup is a separate standings table and does not need to be counted toward that threshold. These results document the bot's ladder performance; the sponsor has yet to accept the published proof.
+
 Run the behavior checks with `node controller.test.cjs`. To reproduce the simulator test with Node, download the arena's current `arena-sim.mjs` and `local-test.mjs` from its [official SDK](https://api.battle.training/llms.txt) into this folder and run `node local-test.mjs controller.js --seeds 3 --vs brawler,holder,random,hunter --rules s2 --profile`. The SDK may change; the stated result describes the version run on that date.
